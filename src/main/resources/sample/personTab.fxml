@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<SplitPane dividerPositions="0.5" minHeight="-Infinity" minWidth="-Infinity" prefHeight="505.0" prefWidth="705.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.TaskTabController">
+  <items>
+      <VBox alignment="CENTER">
+         <children>
+            <VBox layoutX="7.0" layoutY="9.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="483.0" prefWidth="334.0" spacing="15.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="12.0" spacing="5.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Фамилия:" />
+                        <TextField prefHeight="25.0" prefWidth="181.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="12.0" spacing="5.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Имя:" />
+                        <TextField prefHeight="25.0" prefWidth="180.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="12.0" spacing="5.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Отчество:" />
+                        <TextField prefHeight="25.0" prefWidth="180.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" prefHeight="12.0" spacing="5.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Дата рождения:" />
+                        <DatePicker />
+                     </children>
+                  </HBox>
+                  <VBox prefHeight="267.0" spacing="5.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Специализации:" />
+                        <ListView maxWidth="600.0" prefHeight="252.0" />
+                     </children>
+                  </VBox>
+                  <HBox alignment="CENTER_RIGHT" prefHeight="34.0" spacing="15.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Сохранить" />
+                        <Button mnemonicParsing="false" text="Очистить" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+      <SplitPane dividerPositions="0.7117296222664016" orientation="VERTICAL" prefHeight="503.0" prefWidth="348.0">
+        <items>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="355.0" prefWidth="348.0" />
+            <ScrollPane hbarPolicy="NEVER" prefHeight="142.0" prefWidth="348.0">
+               <content>
+                  <VBox minWidth="-Infinity">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Информация о сотруднике" wrappingWidth="321.515625" />
+                     </children>
+                     <padding>
+                        <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+        </items>
+      </SplitPane>
+  </items>
+</SplitPane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity"
+         prefHeight="600.0" prefWidth="850.0" tabClosingPolicy="UNAVAILABLE"
+         xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8">
+  <tabs>
+    <Tab text="Заявки">
+      <content>
+        <fx:include source="taskTab.fxml"/>
+      </content>
+    </Tab>
+    <Tab text="Договоры">
+      <content>
+        <fx:include source="contractTab.fxml"/>
+      </content>
+    </Tab>
+    <Tab text="Сотрудники">
+      <content>
+        <fx:include source="personTab.fxml" />
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>

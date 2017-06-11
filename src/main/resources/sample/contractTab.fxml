@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<SplitPane dividerPositions="0.5" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controller.TaskTabController">
+  <items>
+      <VBox alignment="CENTER">
+         <children>
+            <VBox layoutX="7.0" layoutY="9.0" maxHeight="700.0" maxWidth="600.0" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="483.0" prefWidth="334.0" spacing="15.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" maxWidth="600.0" prefHeight="12.0" spacing="5.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Номер договора:" />
+                        <TextField prefHeight="25.0" prefWidth="97.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" maxWidth="600.0" prefHeight="12.0" spacing="5.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Дата заключения договора:" />
+                        <DatePicker prefHeight="25.0" prefWidth="123.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_LEFT" maxWidth="600.0" prefHeight="12.0" spacing="5.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Дата окончания действия договора:" />
+                        <DatePicker />
+                     </children>
+                  </HBox>
+                  <HBox maxWidth="600.0" prefHeight="37.0" spacing="5.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Клиент:" />
+                        <TextArea maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" prefColumnCount="1" prefHeight="63.0" prefRowCount="1" prefWidth="600.0" />
+                     </children>
+                  </HBox>
+                  <HBox maxWidth="600.0" prefHeight="242.0" spacing="5.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Услуги:" />
+                        <ListView maxWidth="-Infinity" prefHeight="67.0" prefWidth="600.0" />
+                     </children>
+                  </HBox>
+                  <HBox alignment="CENTER_RIGHT" maxWidth="600.0" prefHeight="34.0" spacing="15.0">
+                     <children>
+                        <Button mnemonicParsing="false" text="Сохранить" />
+                        <Button mnemonicParsing="false" text="Очистить" />
+                     </children>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+            </VBox>
+         </children>
+      </VBox>
+      <SplitPane dividerPositions="0.7117296222664016" orientation="VERTICAL" prefHeight="503.0" prefWidth="348.0">
+        <items>
+            <ScrollPane hbarPolicy="NEVER" prefHeight="355.0" prefWidth="348.0" />
+            <ScrollPane hbarPolicy="NEVER" prefHeight="142.0" prefWidth="348.0">
+               <content>
+                  <VBox prefWidth="336.0">
+                     <children>
+                        <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Информация о договоре" wrappingWidth="321.515625" />
+                     </children>
+                     <padding>
+                        <Insets bottom="6.0" left="6.0" right="6.0" top="6.0" />
+                     </padding>
+                  </VBox>
+               </content>
+            </ScrollPane>
+        </items>
+      </SplitPane>
+  </items>
+</SplitPane>
